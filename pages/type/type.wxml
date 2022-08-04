@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <!-- <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block> -->
+    <block wx:if="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">昵称：{{userInfo.nickName}}</text>
+      <block wx:if="{{!userInfo.gender}}">
+        <text class="userinfo-nickname">性别：男</text>
+      </block>
+      <block wx:else>
+        <text class="userinfo-nickname">性别：女</text>
+      </block>
+      <text class="userinfo-nickname">语言：{{userInfo.language}}</text>
+      <text class="userinfo-nickname">个性签名：{{motto}}</text>
+      <text class="userinfo-nickname">开发板卡：{{test_text}}</text>
+    </block>
+  </view>
+</view>
+
+
+
+

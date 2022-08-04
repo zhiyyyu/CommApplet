@@ -1,0 +1,50 @@
+{
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.0",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "pages": [
+    "pages/chat-list/chat-list",
+    "pages/friends/friends",
+    "pages/type/type",
+    "pages/TencentCloud/TencentCloud"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "设备互联",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "wifi列表需要获取您的授权信息"
+    }
+  },
+  "tabBar": {
+    "selectedColor": "#35c8fb",
+    "color": "#7f8389",
+    "list": [
+      {
+        "pagePath": "pages/chat-list/chat-list",
+        "text": "会话",
+        "iconPath": "image/tabbar/chat_list_unselected.png",
+        "selectedIconPath": "image/tabbar/chat_list.png"
+      },
+      {
+        "pagePath": "pages/type/type",
+        "text": "我",
+        "iconPath": "image/tabbar/friend_unselected.png",
+        "selectedIconPath": "image/tabbar/friend.png"
+      },
+      {
+        "pagePath": "pages/TencentCloud/TencentCloud",
+        "text": "测试",
+        "iconPath": "image/tabbar/test_unselected.png",
+        "selectedIconPath": "image/tabbar/test.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

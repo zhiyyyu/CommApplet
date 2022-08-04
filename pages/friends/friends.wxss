@@ -1,0 +1,112 @@
+/* pages/friends/friends.wxss */
+/* @import "pages\friends\view\chat-item-head.wxss"; */
+.unread-style{
+  min-width:32rpx;
+  max-width:40rpx;
+  max-height: 32rpx;
+  min-height: 32rpx;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #f64e30;
+  color: white;
+  font-size: 22rpx;
+  line-height: 27rpx;
+  position: absolute;
+  top: -3rpx;
+  right: -3rpx;
+}
+.chat-head-style{
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 50%;
+}
+.chat-item-head-super-style{
+  width: auto;
+  display: flex;
+  margin:31rpx 34rpx 31rpx 34rpx;
+  position: relative;
+}
+/* @import "pages/friends/view/chat-item.wxss"; */
+.chat-item-style{
+  width:100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.chat-item-content-super-style{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.chat-item-name-style{
+  color: #666666;
+  font-size: 32rpx;
+  margin-bottom: 14rpx;
+}
+.chat-item-content-style{
+  min-height: 20rpx;
+  width: 100%;
+  color: #666666;
+  font-size: 26rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.chat-item-status-super-style{
+  position: absolute;
+  right: 34rpx;
+  top: 35rpx;
+  display:flex;
+  flex-direction: column;
+  align-items:flex-end;
+}
+.chat-item-time-style{
+  color: #999999;
+  font-size: 20rpx;
+  margin-bottom: 20rpx;
+  text-align: right;
+}
+
+.chat-item-style{
+    width:100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.chat-item-content-super-style{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.chat-item-name-style{
+    color: #666666;
+    font-size: 32rpx;
+    margin-bottom: 14rpx;
+}
+.chat-item-content-style{
+    min-height: 20rpx;
+    width: 100%;
+    color: #666666;
+    font-size: 26rpx;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.chat-item-status-super-style{
+    position: absolute;
+    right: 34rpx;
+    top: 35rpx;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+.chat-item-time-style{
+    color: #999999;
+    font-size: 20rpx;
+    margin-bottom: 20rpx;
+    text-align: right;
+}
