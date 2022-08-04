@@ -41,7 +41,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.19.2",
-  "appid": "wxa761a6d94a1131e4",
+  "appid": "",
   "projectname": "udp&mqttTransport",
   "condition": {},
   "packOptions": {
