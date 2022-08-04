@@ -23,7 +23,7 @@
       </block>
       <text class="userinfo-nickname">语言：{{userInfo.language}}</text>
       <text class="userinfo-nickname">个性签名：{{motto}}</text>
-      <text class="userinfo-nickname">开发板卡：{{test_text}}</text>
+      <text class="userinfo-nickname">{{test_text}}</text>
     </block>
   </view>
 </view>
